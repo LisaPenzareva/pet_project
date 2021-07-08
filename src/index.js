@@ -5,8 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.min";
 import './index.css';
 import App from "./components/App";
-import { BrowserRouter } from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import { store } from "./store/store";
+
 
 
 ReactDOM.render(

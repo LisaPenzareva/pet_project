@@ -1,12 +1,28 @@
 import React from "react";
 import MainPage from "./MainPage/MainPage";
-import Pages from "../layouts/Pages";
+import {Route, Switch} from "react-router-dom";
+import SignIn from "./SignIn";
+import Lost from "./Guest/Lost";
+import Found from "./Guest/Found";
 
 const App = () => {
   return (
     <>
-      <MainPage />
-      {/* <Pages /> */}
+      <Switch>
+        <Route exact path="/">
+          <MainPage />
+        </Route>
+        <Route exact path="/signin">
+          <SignIn/>
+        </Route>
+        <Route exact path="/lost">
+          <Lost/>
+        </Route>
+        <Route exact path="/found">
+          <Found/>
+        </Route>
+      </Switch>
+
     </>
   );
 };

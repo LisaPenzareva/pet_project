@@ -2,8 +2,8 @@ import React from "react";
 import MainPage from "./MainPage/MainPage";
 import {Route, Switch} from "react-router-dom";
 import SignIn from "./SignIn";
-import Lost from "./Guest/Lost";
-import Found from "./Guest/Found";
+import Lost from "./LostAndFound/Lost";
+import Found from "./LostAndFound/Found";
 
 const App = () => {
   return (

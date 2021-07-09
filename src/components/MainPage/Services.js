@@ -3,7 +3,7 @@ import React from "react";
 const Services = () => {
   return (
       <div className="container">
-        <div className='d-flex flex-row flex-wrap justify-content-center mt-5'>
+        <div className='services-container container d-flex  mt-5'>
           <div className="petsPic">
           </div>
           <div>

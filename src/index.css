@@ -1,6 +1,4 @@
-*{
-box-sizing: border-box;
-}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -145,17 +143,25 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 .petsPic{
+  width:50%;
+  height:100%;
   background-image: url("./images/pets.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+}
+.services-container{
+  display: flex;
+  height: 500px;
+  width:100%;
 }
 .footer-wrapper{
   background-color: #06B2BB;
   min-height: 130px;
+  min-width: 100%;
 }
 .logo-footer{
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 60px;
   background-image: url("./images/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;

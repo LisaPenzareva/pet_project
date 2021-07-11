@@ -1,8 +1,8 @@
 import React from "react";
 
-const Found  = ()=>{
+const Found = () => {
     return (
-        <h1>Found</h1>
+        <h1>Found List</h1>
     )
 }
 export default Found

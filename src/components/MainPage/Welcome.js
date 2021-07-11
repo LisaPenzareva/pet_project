@@ -20,14 +20,17 @@ const Welcome = () => {
                   <div className='col-8 offset-3'
                        onMouseEnter={() => setLostText('Click to find!')}
                        onMouseOut={() => setLostText('I lost my pet!')}>
-                      <NavLink  to="/lost" style={{ textDecoration: 'none', color:"black" }}>{lostText}</NavLink></div>
+                      <NavLink exact={true} to="/lostandfound" style={{ textDecoration: 'none', color:"black" }}>{lostText}</NavLink>
+                  </div>
               </div>
               <div onMouseEnter={() => setFoundText('What to do?')}
                    onMouseOut={() => setFoundText('I found a pet!')}
                    className="foundButton">
                   <div onMouseEnter={() => setFoundText('What to do?')}
                        onMouseOut={() => setFoundText('I found a pet!')}
-                       className='col-8 offset-4'><NavLink  to="/found" style={{ textDecoration: 'none', color:"white" }}>{foundText}</NavLink></div>
+                       className='col-8 offset-4'>
+                      <NavLink exact={true} to="/lostandfound" style={{ textDecoration: 'none', color:"white" }}>{foundText}</NavLink>
+                  </div>
               </div>
 
           </div>

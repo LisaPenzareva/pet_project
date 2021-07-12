@@ -1,9 +1,7 @@
 import React from "react";
 import MainPage from "./MainPage/MainPage";
-import {Route, Switch} from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import SignIn from "./SignIn";
-import Lost from "./LostAndFound/Lost";
-import Found from "./LostAndFound/Found";
 import LostAndFoundPage from "./LostAndFound/LostAndFoundPage";
 
 const App = () => {
@@ -14,19 +12,18 @@ const App = () => {
           <MainPage />
         </Route>
         <Route exact path="/signin">
-          <SignIn/>
+          <SignIn />
         </Route>
         <Route exact path="/lostandfound">
-          <LostAndFoundPage/>
+          <LostAndFoundPage isLost={true} />
         </Route>
         <Route exact path="/lostandfound/lost">
-          <Lost/>
+          <LostAndFoundPage isLost={true} />
         </Route>
         <Route exact path="/lostandfound/found">
-          <Found/>
+          <LostAndFoundPage isLost={false} />
         </Route>
       </Switch>
-
     </>
   );
 };

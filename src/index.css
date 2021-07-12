@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -160,10 +161,48 @@ body {
   min-width: 100%;
 }
 .logo-footer{
-  width: 100%;
+  width: 50%;
   height: 60px;
   background-image: url("./images/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
-/*.blue-logo{}*/
+
+.signin-text{
+  color: #06B2BB;
+  font-size: larger;
+}
+
+.blue-logo{
+  width:500px;
+  height:150px;
+  background-image: url("./images/blue-logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 30px;
+
+}
+
+.signInUp{
+  opacity: 0.7;
+  height: 40px;
+  background-color: #06B2BB9A;
+  border: 1px solid #06B2BB9A;
+
+}
+.hide{
+  display: none;
+}
+.blue-bg{
+  background-color:#06B2BB ;
+  height: 100vw;
+  padding-top: 150px;
+}
+.blue-logo-container{
+  width:300px;
+  height:150px;
+
+}
+.active-class{
+  opacity: 1;
+}

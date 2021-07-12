@@ -1,10 +1,11 @@
 import React from "react";
 import MainPage from "./MainPage/MainPage";
 import {Route, Switch} from "react-router-dom";
-import SignIn from "./SignIn";
+import SignIn from "./SignUpIn/SignIn";
 import Lost from "./LostAndFound/Lost";
 import Found from "./LostAndFound/Found";
 import LostAndFoundPage from "./LostAndFound/LostAndFoundPage";
+import SignPage from "./SignUpIn/SignPage";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
           <MainPage />
         </Route>
         <Route exact path="/signin">
-          <SignIn/>
+          <SignPage/>
         </Route>
         <Route exact path="/lostandfound">
           <LostAndFoundPage/>

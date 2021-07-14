@@ -182,13 +182,20 @@ body {
   margin-top: 30px;
 
 }
+.white-container{
+  width: 60%;
+height:650px;
+}
 
 .signInUp{
-  opacity: 0.7;
   height: 40px;
+  width:45%;
   background-color: #06B2BB9A;
   border: 1px solid #06B2BB9A;
-
+  cursor: pointer;
+}
+.signInUp:hover{
+  opacity: 0.7;
 }
 .hide{
   display: none;
@@ -199,10 +206,85 @@ body {
   padding-top: 150px;
 }
 .blue-logo-container{
+  padding: 10px;
   width:300px;
   height:150px;
 
 }
-.active-class{
-  opacity: 1;
+/*.activeClass{*/
+/*  opacity: 0.7;*/
+/*}*/
+/*.activeClassm{*/
+/*  opacity: 0.7;*/
+/*}*/
+
+
+.button-block{
+  display: flex;
+  text-align: center;
 }
+
+.submit-button{
+  border-radius: 17px;
+  background: #06B2BB9A 0% 0% no-repeat padding-box;
+  border: 1px solid #8DBFAC;
+  width: 100px;
+  height: 40px;
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.cancel-button{
+  border-radius: 17px;
+  border: 1px solid #8DBFAC;
+  background-color: white;
+  color: #06B2BB9A;
+  width: 100px;
+  height: 40px;
+  opacity: 1;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.terms-text{
+  color:#BABABA;
+  font-size: 10px;
+
+}
+.sideText{
+  padding-top: 80px;
+  opacity: 0.7;
+  font-size: 10px;
+  color:#BABABA;
+}
+.sideText-1{
+  margin-top: 30px;
+  opacity: 0.7;
+  font-size: 10px;
+  color:#BABABA;
+
+}
+.inputForm{
+  border: none;
+  border-bottom: 1px solid #06B2BB9A;
+  width: 250px;
+}
+input:focus{
+  outline: none;
+}
+.inputForm::placeholder{
+  width: 300px;
+}
+.labelClass{
+  margin-right: 30px;
+  text-align: right;
+  width: 70px;
+  color:#BABABA
+}
+.labeledInput{
+  margin-top: 10px;
+}
+
+
+

@@ -2,11 +2,14 @@ import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import Lost from "./Lost";
 import Found from "./Found";
-// import LostList from "./LostList";
-// import FoundList from "./FoundList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaw, faSearch } from "@fortawesome/free-solid-svg-icons";
+import PetProfile from "./PetProfile";
 
 const LostAndFoundPage = (props) => {
   const isLost = props.isLost;
+  const petById = props.petById;
+
   return (
     <Fragment>
       <header>
@@ -14,19 +17,26 @@ const LostAndFoundPage = (props) => {
           <NavLink to="/"> </NavLink>
         </div>
       </header>
-      <section>
-        <div className="sidebar-left">
-          <ul className="nav">
-            <li>
-              <NavLink to="/lostandfound/lost">Lost</NavLink>
-            </li>
-            <li>
-              <NavLink to="/lostandfound/found">Found</NavLink>
-            </li>
-          </ul>
+
+      <section className="container ">
+        <div className="row align-items-start">
+          <div className="sidebar-left col">
+            <nav className="nav flex-column">
+              <NavLink className="nav-link" to="/lostandfound/lost">
+                <FontAwesomeIcon icon={faSearch} /> Lost
+              </NavLink>
+              <NavLink className="nav-link" to="/lostandfound/found">
+                <FontAwesomeIcon icon={faPaw} /> Found
+              </NavLink>
+            </nav>
+          </div>
+
+          <div className="lost-found-pets col">
+            {isLost ? <Lost /> : <Found /> }
+          </div>
+
+          <div className="sidebar-right col"></div>
         </div>
-        <div className="lost-found-pets">{isLost ? <Lost /> : <Found />}</div>
-        <div className="sidebar-right"></div>
       </section>
     </Fragment>
   );

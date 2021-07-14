@@ -8,7 +8,7 @@ import PetProfile from "./PetProfile";
 
 const LostAndFoundPage = (props) => {
   const isLost = props.isLost;
-  const petById = props.petById;
+  // const petById = props.petById;
 
   return (
     <Fragment>
@@ -32,7 +32,9 @@ const LostAndFoundPage = (props) => {
           </div>
 
           <div className="lost-found-pets col">
-            {isLost ? <Lost /> : <Found /> }
+            {isLost ? <Lost /> : <Found /> 
+            // || petById ? < PetProfile/> : null
+            }
           </div>
 
           <div className="sidebar-right col"></div>

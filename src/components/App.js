@@ -13,7 +13,8 @@ const App = () => {
         <Route exact path="/">
           <MainPage />
         </Route>
-        <Route exact path="/signin">
+
+        <Route path="/signin">
 
           <SignPage />
 
@@ -27,8 +28,11 @@ const App = () => {
         <Route exact path="/lostandfound/found">
           <LostAndFoundPage isLost={false} />
         </Route>
-        <Route exact path="/lostandfound/lost/1">
-          <PetProfile/>
+        <Route path="/lostandfound/lost/:id">
+          <PetProfile isLost={true} />
+        </Route>
+        <Route path="/lostandfound/found/:id">
+          <PetProfile isLost={false} />
         </Route>
       </Switch>
     </>

@@ -16,15 +16,18 @@ const Lost = ({ pets }) => {
 
   return (
     <section>
-      <h3> Lost pets </h3>
+        <div className="lost-wrapper">
+           <h3 className="lost-title"> Lost pets </h3>
       <hr />
-      <div>
+      <div className="lost-text">
         Would you like to publish a post?{" "}
         <NavLink to="/signin">
           <span style={{ textDecoration: "none", color: "#06B2BB" }}>JOIN</span>
         </NavLink>{" "}
         to our community
-      </div>
+      </div> 
+        </div>
+      
 
       <div className="container">
         <div className="row">{renderPets()}</div>

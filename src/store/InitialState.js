@@ -20,8 +20,9 @@ const InitialState = {
       comments: [],
     },
   },
+
   pets: {
-    isLost: false,
+    isLostMode: false,
     petById: {},
     lostList: [
       {

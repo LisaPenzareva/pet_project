@@ -4,10 +4,10 @@ import Lost from "./Lost";
 import Found from "./Found";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaw, faSearch } from "@fortawesome/free-solid-svg-icons";
-import PetProfile from "./PetProfile";
+import PetProfile from "./PetProfileLost";
 
 const LostAndFoundPage = (props) => {
-  const isLost = props.isLost;
+  const isLostMode = props.isLostMode;
   // const petById = props.petById;
 
   return (
@@ -32,7 +32,7 @@ const LostAndFoundPage = (props) => {
           </div>
 
           <div className="lost-found-pets col">
-            {isLost ? <Lost /> : <Found /> 
+            {isLostMode ? <Lost /> : <Found />
             // || petById ? < PetProfile/> : null
             }
           </div>

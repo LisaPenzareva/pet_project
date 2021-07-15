@@ -9,9 +9,6 @@ const Found = ({ pets }) => {
       return <div>No pets</div>;
     }
     return pets.map((pet) => <PetCard key={pet.id} pet={pet} />);
-    // return (
-    //     <PetCard/>
-    // )
   };
 
   return (

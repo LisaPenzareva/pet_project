@@ -1,10 +1,10 @@
 import React from "react";
 import MainPage from "./MainPage/MainPage";
 import { Route, Switch } from "react-router-dom";
-// import SignIn from "./SignIn";
 import LostAndFoundPage from "./LostAndFound/LostAndFoundPage";
 import SignPage from "./SignUpIn/SignPage";
-import PetProfile from "./LostAndFound/PetProfile";
+import PetProfileLost from "./LostAndFound/PetProfileLost";
+import PetProfileFound from "./LostAndFound/PetProfileFound";
 
 const App = () => {
   return (
@@ -13,22 +13,24 @@ const App = () => {
         <Route exact path="/">
           <MainPage />
         </Route>
-        <Route exact path="/signin">
-          <SignPage/>
+        <Route path="/signin">
+          <SignPage />
         </Route>
         <Route exact path="/lostandfound">
-          <LostAndFoundPage isLost={true} />
+          <LostAndFoundPage isLostMode={true} />
         </Route>
         <Route exact path="/lostandfound/lost">
-          <LostAndFoundPage isLost={true} />
+          <LostAndFoundPage isLostMode={true} />
         </Route>
         <Route exact path="/lostandfound/found">
-          <LostAndFoundPage isLost={false} />
+          <LostAndFoundPage isLostMode={false} />
         </Route>
-        <Route exact path="/lostandfound/lost/1">
-          <PetProfile/>
+        <Route path="/lostandfound/lost/:id">
+          <PetProfileLost />
         </Route>
-
+        <Route path="/lostandfound/found/:id">
+          <PetProfileFound />
+        </Route>
       </Switch>
     </>
   );

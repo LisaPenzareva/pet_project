@@ -19,8 +19,8 @@ const LostAndFoundPage = (props) => {
       </header>
 
       <section className="container ">
-        <div className="row align-items-start">
-          <div className="sidebar-left col">
+        <div className="row align-items-start ">
+          <div className="sidebar-left col-2">
             <nav className="nav flex-column">
               <NavLink className="nav-link" to="/lostandfound/lost">
                 <FontAwesomeIcon icon={faSearch} /> Lost
@@ -31,13 +31,13 @@ const LostAndFoundPage = (props) => {
             </nav>
           </div>
 
-          <div className="lost-found-pets col">
+          <div className="lost-found-pets col-8">
             {isLost ? <Lost /> : <Found /> 
             // || petById ? < PetProfile/> : null
             }
           </div>
 
-          <div className="sidebar-right col"></div>
+          <div className="sidebar-right col-2"></div>
         </div>
       </section>
     </Fragment>

@@ -1,7 +1,7 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarker } from "@fortawesome/free-solid-svg-icons";
-// import {Link} from "react-router-dom";
+
+import React from "react"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMapMarker} from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router-dom";
 
 const PetCard = ({ pet }) => {
@@ -14,6 +14,7 @@ const PetCard = ({ pet }) => {
         : `/lostandfound/found/${pet.id}`
     );
   };
+
 
   return (
     <div className="card border-0" style={{ width: "18rem" }}>
@@ -33,6 +34,7 @@ const PetCard = ({ pet }) => {
           >
             view details <span style={{ color: "black" }}>>></span>{" "}
           </a>
+
         </div>
 
         {/* <Link to={ pet.isLost ? `/lostandfound/lost/${pet.id}` : `/lostandfound/found/${pet.id}`} style={{color: "#68D0D6"}} className="card-link">view details <span style={{color: "black"}}>>></span> </Link> */}

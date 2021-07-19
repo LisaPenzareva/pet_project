@@ -6,10 +6,11 @@ import { useHistory } from "react-router-dom";
 
 const PetCard = ({ pet }) => {
   let history = useHistory();
+
   const clickHandle = (event) => {
     event.preventDefault();
     history.push(
-      pet.isLost
+        pet.lostFound === "lost"
         ? `/lostandfound/lost/${pet.id} `
         : `/lostandfound/found/${pet.id}`
     );
@@ -19,12 +20,12 @@ const PetCard = ({ pet }) => {
   return (
     <div className="card border-0" style={{ width: "18rem" }}>
       <div className="card-body">
-        <h5 className="petcard-title card-title">{pet.nickname}</h5>
+        <h5 className="petcard-title card-title">{pet.nick}</h5>
         <p className="petcard-text card-text">
           <FontAwesomeIcon style={{ color: "#06B2BB9A" }} icon={faMapMarker} />{" "}
           {pet.location}
         </p>
-        <img src={pet.image} className="card-img-bottom" alt="dog" />
+        <img src={pet.photo} className="card-img-bottom" alt="dog" />
         <div className="petcard-link">
           <a
             href="#"

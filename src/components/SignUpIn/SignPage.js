@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
-import FooterSignIn from "./FooterSignIn";
+// import FooterSignIn from "./FooterSignIn";
 
 const SignPage = () => {
 
@@ -20,11 +20,11 @@ const SignPage = () => {
 
                 <div className='flex-row d-flex flex-wrap justify-content-center text-center mt-3'>
                     <div onClick={()=>{
-                        setSignContent(<SignIn/>)}}  className="col-6 signInUp  py-2 text-white"> Sign up </div>
-                    <div onClick={()=>{setSignContent(<SignUp/>)}} className="col-6 signInUp  py-2 text-white"> Sign in </div>
+                        setSignContent(<SignIn/>)}}  className="col-6 signInUp  py-2 text-white"> Sign in </div>
+                    <div onClick={()=>{setSignContent(<SignUp/>)}} className="col-6 signInUp  py-2 text-white"> Sign up </div>
                 </div>
                 <div className='pb-3'>{signContent}</div>
-                <FooterSignIn/>
+                {/*<FooterSignIn/>*/}
             </div>
             <hr/>
         </section>

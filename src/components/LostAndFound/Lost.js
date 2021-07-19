@@ -1,17 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import PetCard from "./PetCard";
-import { connect } from "react-redux";
+import {connect, useDispatch} from "react-redux";
+import {getLostPets} from "../../store/actions/actionPets";
 
 const Lost = ({ pets }) => {
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(getLostPets())
+    }, []);
+
   const renderPets = () => {
     if (!pets.length) {
       return <div>No pets</div>;
     }
     return pets.map((pet) => <PetCard key={pet.id} pet={pet} />);
-    // return (
-    //     <PetCard/>
-    // )
   };
 
   return (

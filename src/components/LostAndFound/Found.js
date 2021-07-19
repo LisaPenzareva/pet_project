@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import PetCard from "./PetCard";
 import { NavLink } from "react-router-dom";
-import { connect } from "react-redux";
+import {connect, useDispatch} from "react-redux";
+import {getFoundPets} from "../../store/actions/actionPets";
 
 const Found = ({ pets }) => {
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(getFoundPets())
+    }, []);
+
   const renderPets = () => {
     if (!pets.length) {
       return <div>No pets</div>;

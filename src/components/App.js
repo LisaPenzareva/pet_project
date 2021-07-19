@@ -5,14 +5,25 @@ import LostAndFoundPage from "./LostAndFound/LostAndFoundPage";
 import SignPage from "./SignUpIn/SignPage";
 import PetProfileLost from "./LostAndFound/PetProfileLost";
 import PetProfileFound from "./LostAndFound/PetProfileFound";
+import Home from "./HomePage/Home";
+import {useSelector} from "react-redux";
 
 const App = () => {
+
+  const isAuth = useSelector(state => {
+    return state.users.isAuth
+  })
+
   return (
     <>
       <Switch>
         <Route exact path="/">
           <MainPage />
         </Route>
+        <Route exact path="/homepage">
+          { isAuth ? <Home /> : null}
+        </Route>
+
         <Route path="/signin">
           <SignPage />
         </Route>

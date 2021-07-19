@@ -14,46 +14,35 @@ const PetProfileFound = ({ pet, setFoundPet }) => {
         setFoundPet(+id)
         }, []);
 
-
-  // if (isLost) {
-  //     useEffect(() => {
-  //         setLostPet(+id)
-  //     }, []);
-  // } else {
-  //     useEffect(() => {
-  //         setFoundPet(+id)
-  //     }, []);
-  // }
-
   return (
       <div className="pet-profile-wrapper">
           <div>
-              <h1>{pet.nickname} | </h1>
+              <h1>{pet.nick} | </h1>
               <p className="card-text"><FontAwesomeIcon style={{color: "#06B2BB9A"}} icon={faMapMarker}/> {pet.location}</p>
           </div>
         <hr/>
           <div className="card mb-3" style={{maxWidth: "540px"}}>
               <div className="row g-0">
                   <div className="col-md-4">
-        <img src={pet.image} className="card-img-top" alt="pet"/>
+        <img src={pet.photo} className="card-img-top" alt="pet"/>
                       </div>
                   <div className="col-md-8">
                       <div className="card-body">
                           <h3 className="card-title">{pet.type}, {pet.breed}</h3>
-                          <p className="card-text"><small className="text-muted">Dec 12, 2019</small></p>
+                          <p className="card-text"><small className="text-muted">{pet.createdAt}</small></p>
                           <hr/>
                           <p>
                               Color: {pet.color}<br/>
                               Sex: {pet.sex}<br/>
                               Height: {pet.height}<br/>
                               <br/>
-                              Distinctive features: {pet.features}<br/>
+                              Distinctive features: {pet.disFeatures}<br/>
                               <br/>
                               Description: {pet.description}<br/>
                               <br/>
-                              {/*Owner: {pet.contacts.owner}*/}
-                              {/*Phone: {pet.contacts.phone}*/}
-                              {/*E-Mail: {pet.contacts.email}*/}
+                              {/*Owner: {pet.User.fullName}*/}
+                              {/*Phone: {pet.User.phone}*/}
+                              {/*E-Mail: {pet.User.email}*/}
                           </p>
                       </div>
                   </div>

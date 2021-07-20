@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom'
 import {connect} from "react-redux";
 import {doSignIn} from "../../store/actions/actionUsers";
 
-const SignIn = ({signin}) => {
+const SignIn = ({ signin }) => {
 
     const [formData, setFormData] = useState({
         email: '',
@@ -12,8 +12,15 @@ const SignIn = ({signin}) => {
 
     let history = useHistory()
 
-    const submitHandle = async (formData) => {
-       await signin(formData);
+    const changeFieldHandle = event => {
+        setFormData({
+            ...formData, [event.target.name]: event.target.value
+        })
+    }
+
+    const submitHandle = event => {
+        event.preventDefault()
+        signin(formData);
         history.push('/homepage')
     }
 
@@ -25,11 +32,11 @@ const SignIn = ({signin}) => {
                     <form onSubmit={submitHandle}>
                         <div className="labeledInput">
                             <label className="labelClass" style={{fontWeight: '500'}}>Email:</label>{' '}
-                            <input className="inputForm" placeholder='helenjohnson@gmail.com'/>
+                            <input type="text" className="inputForm" name='email' placeholder='helenjohnson@gmail.com' onChange={changeFieldHandle}/>
                         </div>
                         <div className="labeledInput">
                             <label className="labelClass" style={{fontWeight: '500'}}>Password:</label>{' '}
-                            <input type="password" className="inputForm" placeholder='**********'/>
+                            <input type="password" className="inputForm" name='password' placeholder='**********' onChange={changeFieldHandle}/>
                         </div>
                         <hr/>
                         <div className="d-flex flex-row flex-wrap justify-content-center">

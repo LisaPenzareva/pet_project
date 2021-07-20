@@ -14,7 +14,7 @@ const SignUp = ({addUser}) => {
         password: ''
     })
 
-    let history = useHistory()
+    let history = useHistory();
 
     const changeFieldHandle = event => {
         setFormData({
@@ -22,7 +22,8 @@ const SignUp = ({addUser}) => {
         })
     }
 
-    const submitHandle = formData => {
+    const submitHandle = event => {
+        event.preventDefault()
         addUser(formData)
         history.push('/signin')
     }

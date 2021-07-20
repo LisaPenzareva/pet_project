@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import Lost from "./Lost";
 import Found from "./Found";
@@ -11,37 +11,40 @@ const LostAndFoundPage = (props) => {
   // const petById = props.petById;
 
   return (
-    <Fragment>
-      <header>
-        <div className="blue-logo">
+    <div>
+      <header className="homepage-header">
+        <div className="blue-logo blue-logo-header">
           <NavLink to="/"> </NavLink>
         </div>
       </header>
 
-      <section className="container ">
-        <div className="row align-items-start ">
+      <section className="container mx-0">
+
+        <div className="row align-items-stretch ">
           <div className="sidebar-left col-2">
-            <nav className="nav flex-column">
-              <NavLink className="nav-link" to="/lostandfound/lost">
-                <FontAwesomeIcon icon={faSearch} /> Lost
-              </NavLink>
-              <NavLink className="nav-link" to="/lostandfound/found">
-                <FontAwesomeIcon icon={faPaw} /> Found
-              </NavLink>
+            <nav className="nav flex-column my-5">
+              <div className="nav-element">
+                <NavLink className="nav-link text-white fw-bold" to="/lostandfound/lost">
+                  <FontAwesomeIcon icon={faSearch} /> {" "} Lost
+                </NavLink>
+              </div>
+              <div className="nav-element">
+                <NavLink className="nav-link text-white fw-bold" to="/lostandfound/found">
+                  <FontAwesomeIcon icon={faPaw} /> {" "} Found
+                </NavLink>
+              </div>
             </nav>
           </div>
 
 
           <div className="lost-found-pets col">
-            {isLostMode ? <Lost /> : <Found />
-            // || petById ? < PetProfile/> : null
-            }
+            {isLostMode ? <Lost /> : <Found />}
           </div>
 
-          <div className="sidebar-right col-2"></div>
+          <div className="sidebar-right col-2"> </div>
         </div>
       </section>
-    </Fragment>
+    </div>
   );
 };
 

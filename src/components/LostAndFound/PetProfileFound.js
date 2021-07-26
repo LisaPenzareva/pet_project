@@ -40,9 +40,9 @@ const PetProfileFound = ({ pet, setFoundPet }) => {
                               <br/>
                               Description: {pet.description}<br/>
                               <br/>
-                              {/*Owner: {pet.User.fullName}*/}
-                              {/*Phone: {pet.User.phone}*/}
-                              {/*E-Mail: {pet.User.email}*/}
+                              Phone: {pet.phone}
+                              <br/>
+                              E-Mail: {pet.email}
                           </p>
                       </div>
                   </div>

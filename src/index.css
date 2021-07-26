@@ -322,7 +322,7 @@ input:focus {
 }
 
 .blue-logo-header {
-  width: 200px;
+  width: 180px;
   /*padding-left: 200px!important;*/
 }
 
@@ -334,22 +334,23 @@ input:focus {
   margin: 0;
 }
 
-.sidebar-left {
-  width: 30%;
+.sidebar-left, .sidebar-right {
   height: 100vh;
   background-color: #06B2BBCC;
-}
-
-/*не видно эту часть*/
-.sidebar-right {
-  /*width: 20%;*/
-  width: 100px;
-  height: 100vh;
-  background-color: #06B2BBCC;
+  padding-left: 0;
+  text-align: center;
 }
 
 .lost-found-pets {
-padding-top: 50px;
+  padding-top: 50px;
+}
+
+.nav-link.active {
+  background-color: white;
+  color: #06B2BBCC!important;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+
 }
 
 /*.nav-element:focus {*/

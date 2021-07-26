@@ -12,16 +12,16 @@ const LostAndFoundPage = (props) => {
 
   return (
     <div>
-      <header className="homepage-header">
+      <header className="homepage-header px-4 py-2">
         <div className="blue-logo blue-logo-header">
           <NavLink to="/"> </NavLink>
         </div>
       </header>
 
-      <section className="container mx-0">
+      <section className="container-fluid">
 
         <div className="row align-items-stretch ">
-          <div className="sidebar-left col-2">
+          <div className="sidebar-left col-3">
             <nav className="nav flex-column my-5">
               <div className="nav-element">
                 <NavLink className="nav-link text-white fw-bold" to="/lostandfound/lost">
@@ -37,7 +37,7 @@ const LostAndFoundPage = (props) => {
           </div>
 
 
-          <div className="lost-found-pets col">
+          <div className="lost-found-pets col-7">
             {isLostMode ? <Lost /> : <Found />}
           </div>
 

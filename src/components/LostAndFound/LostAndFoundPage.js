@@ -4,11 +4,9 @@ import Lost from "./Lost";
 import Found from "./Found";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaw, faSearch } from "@fortawesome/free-solid-svg-icons";
-import PetProfile from "./PetProfileLost";
 
 const LostAndFoundPage = (props) => {
   const isLostMode = props.isLostMode;
-  // const petById = props.petById;
 
   return (
     <div>

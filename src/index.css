@@ -350,9 +350,10 @@ input:focus {
   color: #06B2BBCC!important;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
-
 }
 
-/*.nav-element:focus {*/
-/*  background-color: red;*/
-/*}*/
+.blue {
+  color: #06B2BBCC;
+}
+
+

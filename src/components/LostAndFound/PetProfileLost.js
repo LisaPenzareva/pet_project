@@ -41,40 +41,35 @@ const PetProfileLost = ({ pet, setLostPet }) => {
                       </nav>
                   </div>
 
-                  <div className="pet-profile-wrapper col-7">
+                  <div className="pet-profile-wrapper col-7 p-5">
                       <div>
-                          <h1>{pet.nick} | </h1>
+                          <h3> <span className="blue">Lost pet:</span> {pet.nick} | </h3>
                           <p className="card-text"><FontAwesomeIcon style={{color: "#06B2BB9A"}} icon={faMapMarker}/> {pet.location}</p>
                       </div>
                       <hr/>
                       <div className="card mb-3" style={{maxWidth: "540px"}}>
                           <div className="row g-0">
                               <div className="col-md-4">
-                                  <img src={pet.photo} className="card-img-top" alt="pet"/>
+                                  <img src={ pet.photo = "aaa.jpg"||"bbb.jpg"||" " ? "https://offvkontakte.ru/wp-content/uploads/avatarka-pustaya-vk_20.jpg" : pet.photo} className="card-img-top" alt="pet"/>
                               </div>
                               <div className="col-md-8">
                                   <div className="card-body">
-                                      <h3 className="card-title">{pet.type}, {pet.breed}</h3>
+                                      <h3 className="card-title"><span className="blue">{pet.type}</span> - {pet.breed}</h3>
                                       <p className="card-text"><small className="text-muted">{pet.createdAt}</small></p>
                                       <hr/>
-                                      <p>
-                                          Color: {pet.color}<br/>
-                                          Sex: {pet.sex}<br/>
-                                          Height: {pet.height}<br/>
-                                          <br/>
-                                          Distinctive features: {pet.disFeatures}<br/>
-                                          <br/>
-                                          Description: {pet.description}<br/>
-                                          <br/>
-                                          Phone: {pet.phone}
-                                          <br/>
-                                          E-Mail: {pet.email}
-                                      </p>
+                                      <p><span className="blue">Color:</span> {pet.color} </p>
+                                      <p><span className="blue">Sex:</span>  {pet.sex} </p>
+                                      <p><span className="blue">Height:</span> {pet.height} </p>
+                                      <p><span className="blue">Distinctive features: </span> {pet.disFeatures} </p>
+                                      <p><span className="blue">Description:</span> {pet.description} </p><br/>
+                                      <p><span className="blue"> Phone: </span> {pet.phone} </p>
+                                      <p><span className="blue">  E-Mail:  </span>  {pet.email} </p>
                                   </div>
                               </div>
                           </div>
                       </div>
                   </div>
+
 
 
                   <div className="sidebar-right col-2"> </div>

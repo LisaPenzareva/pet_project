@@ -278,7 +278,7 @@ input:focus {
 .found-title,
 .lost-title {
   color: #06b2bb;
-  font-family: montserrat;
+  font-family: Montserrat;
   font-size: 19px;
   font-weight: bold;
   text-align: left;
@@ -287,7 +287,7 @@ input:focus {
 .found-text,
 .lost-text {
   color: #393939;
-  font-family: montserrat;
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: normal;
   text-align: left;
@@ -351,6 +351,7 @@ input:focus {
   color: #06b2bbcc !important;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
+
 }
 
 /*.nav-element:focus {*/
@@ -419,4 +420,64 @@ input:focus {
   margin: 0 20px 10px 0;
   padding: 0;
   float: left;
+
+}
+
+.blue {
+  color: #06B2BBCC;
+}
+
+
+.form-container {
+  background-color: white;
+  font: normal 13px Montserrat;
+  letter-spacing: 0px;
+  color: #393939;
+  opacity: 1;
+}
+.form-header {
+  font-size: 19px;
+  color: #06B2BB;
+}
+.form-container select, input, textarea {
+  margin-bottom: 5%;
+}
+
+
+.form-container input::placeholder, select, option{
+  color:#BABABA;
+  font: normal 13px Montserrat;
+}
+
+.form-container input, select{
+  border: none;
+  border-bottom: 1px solid #06b2bb9a;
+}
+.form-container textarea{
+  border: 2px solid #1CB1BA;
+  width:300px!important
+}
+
+text {
+  color: #06B2BB9A;
+  font: normal 11px Montserrat;
+}
+.form-friends{
+  background-image: url("./images/height-measurement.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 192px;
+  height: 183px;
+  opacity: 1;
+  margin-left: 25%;
+}
+.lost-form-submit{
+  width: 148px;
+  height: 34px;
+  background: #06B2BB9A 0% 0% no-repeat padding-box;
+  border: 1px solid #13B1BA;
+  border-radius: 17px;
+  opacity: 1;
+  color: white;
+
 }

@@ -44,13 +44,8 @@ const SignUp = ({addUser}) => {
                         <div className="labeledInput">
                             <label className="labelClass " style={{fontWeight: '500'}}>Password:</label>{' '}
                             <input type="password" className="inputForm" placeholder='**********' name='password' onChange={changeFieldHandle}/>
+                            <text className="sideText">Password must have at least 8 characters with at least one Capital letter,at least one lower case letter and at least one number or special character.</text>
                         </div>
-                        {/*<div className='col mt-0 py-5' ><p className="sideText">*/}
-                        {/*    Password must have at least 8 characters with at least one Capital letter,*/}
-                        {/*    at least one lower case letter and at least one number or special character.*/}
-                        {/*</p>*/}
-                        {/*    /!*<p className="sideText-1">please re-enter your password</p>*!/*/}
-                        {/*</div>*/}
                         <hr/>
                         <div className="d-flex flex-row flex-wrap justify-content-center">
                             <p className="col-xs-12 col-lg-6 mt-3  terms-text">By clicking "Submit", you are agree to us processing your information in accordance with <span className="underlinedText">these terms.</span></p>

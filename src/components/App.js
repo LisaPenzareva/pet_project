@@ -6,6 +6,7 @@ import SignPage from "./SignUpIn/SignPage";
 import PetProfileLost from "./LostAndFound/PetProfileLost";
 import PetProfileFound from "./LostAndFound/PetProfileFound";
 import Home from "./HomePage/Home";
+import UserProfile  from "./HomePage/UserProfile";
 import {useSelector} from "react-redux";
 
 const App = () => {
@@ -23,7 +24,9 @@ const App = () => {
         <Route exact path="/homepage">
           { isAuth ? <Home /> : null}
         </Route>
-
+        <Route exact path="/homepage/userprofile">
+           <UserProfile/>
+        </Route>
         <Route path="/signin">
           <SignPage />
         </Route>

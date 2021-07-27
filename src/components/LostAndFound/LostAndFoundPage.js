@@ -25,12 +25,12 @@ const LostAndFoundPage = (props) => {
             <nav className="nav flex-column my-5">
               <div className="nav-element">
                 <NavLink className="nav-link text-white fw-bold" to="/lostandfound/lost">
-                  <FontAwesomeIcon icon={faSearch} /> {" "} Lost
+                  <FontAwesomeIcon icon={faSearch} /> &nbsp; Lost
                 </NavLink>
               </div>
               <div className="nav-element">
                 <NavLink className="nav-link text-white fw-bold" to="/lostandfound/found">
-                  <FontAwesomeIcon icon={faPaw} /> {" "} Found
+                  <FontAwesomeIcon icon={faPaw} /> &nbsp; Found
                 </NavLink>
               </div>
             </nav>

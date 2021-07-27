@@ -5,6 +5,10 @@ const InitialState = {
     signUpMode: false,
     isAuth: localStorage.token ? true : false,
     editMode: false,
+    homeMode: true,
+    walkingMode: false,
+    fosteringMode: false,
+    vetHelpMode: false,
   },
 
   posts: {

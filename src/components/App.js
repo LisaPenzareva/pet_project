@@ -22,8 +22,28 @@ const App = () => {
           <MainPage />
         </Route>
         <Route exact path="/homepage">
-          { isAuth ? <Home /> : null}
+          { isAuth ? <Home /> : <MainPage />}
         </Route>
+        /////////
+
+        <Route exact path="/homepage">
+          { isAuth ? <Home /> : <MainPage />}
+        </Route>
+        <Route exact path="/homepage">
+          { isAuth ? <Home /> : <MainPage />}
+        </Route>
+        <Route exact path="/homepage">
+          { isAuth ? <Home /> : <MainPage />}
+        </Route>
+        <Route exact path="/homepage">
+          { isAuth ? <Home /> : <MainPage />}
+        </Route>
+        <Route exact path="/homepage">
+          { isAuth ? <Home /> : <MainPage />}
+        </Route>
+
+
+//////////////////
         <Route exact path="/homepage/userprofile">
            <UserProfile/>
         </Route>

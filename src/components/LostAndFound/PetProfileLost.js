@@ -45,12 +45,11 @@ const PetProfileLost = ({ pet, setLostPet }) => {
                       <div>
                           <h3> <span className="blue">Lost pet:</span> {pet.nick} | </h3>
                           <p className="card-text"><FontAwesomeIcon style={{color: "#06B2BB9A"}} icon={faMapMarker}/> {pet.location}</p>
-                      </div>
-                      <hr/>
+                      </div><br/>
                       <div className="card mb-3" style={{maxWidth: "540px"}}>
                           <div className="row g-0">
                               <div className="col-md-4">
-                                  <img src={ pet.photo = "aaa.jpg"||"bbb.jpg"||" " ? "https://offvkontakte.ru/wp-content/uploads/avatarka-pustaya-vk_20.jpg" : pet.photo} className="card-img-top" alt="pet"/>
+                                  <img src={ pet.photo = "aaa.jpg"||"bbb.jpg"||" " ? "https://offvkontakte.ru/wp-content/uploads/avatarka-pustaya-vk_20.jpg" : pet.photo} className="card-img-top p-2" alt="pet"/>
                               </div>
                               <div className="col-md-8">
                                   <div className="card-body">

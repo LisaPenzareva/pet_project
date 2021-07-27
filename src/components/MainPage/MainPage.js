@@ -13,7 +13,7 @@ const MainPage = () => {
   });
 
   const renderAuth = () => {
-    //if (!isAuth) {
+    if (!isAuth) {
       return (
         <Fragment>
           <Header />
@@ -23,13 +23,13 @@ const MainPage = () => {
           <Footer />
         </Fragment>
       );
-    //} else {
-    //   return (
-    //     <Fragment>
-    //       <Home />
-    //     </Fragment>
-    //   );
-    // }
+    } else {
+      return (
+        <Fragment>
+          <Home />
+        </Fragment>
+      );
+    }
   };
 
   return <div>{renderAuth()}</div>;

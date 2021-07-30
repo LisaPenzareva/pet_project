@@ -42,6 +42,7 @@ const Main = () => {
 
   return (
     <div>
+
       {renderHeader()}
 
       <section className="container-fluid">

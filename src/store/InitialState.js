@@ -28,8 +28,9 @@ const InitialState = {
   pets: {
     isLostMode: false,
     petById: {},
-    lostList: [],
-    foundList: [],
+    list:[],
+    // lostList: [],
+    // foundList: [],
     // lostList: [
     //   {
     //     id: 1,

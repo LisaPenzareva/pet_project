@@ -43,7 +43,7 @@ const Found = ({ pets }) => {
 
 const mapStateToProps = (state) => {
   return {
-    pets: state.pets.foundList,
+    pets: state.pets.list,
   };
 };
 

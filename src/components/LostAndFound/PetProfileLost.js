@@ -19,9 +19,9 @@ const PetProfileLost = ({ pet, setLostPet }) => {
   }, []);
 
   return (
-    <div>
+    <div className="container-fluid">
       <section className="container-fluid">
-        <div className="pet-profile-wrapper col-7 p-5">
+        <div className="pet-profile-wrapper col-12 mx-auto p-5">
           <div>
             <h3>
               {" "}
@@ -36,15 +36,17 @@ const PetProfileLost = ({ pet, setLostPet }) => {
             </p>
           </div>
           <br />
-          <div className="card mb-3" style={{ maxWidth: "540px" }}>
+          <div className="card mb-3 border-0" style={{ maxWidth: "540px" }}>
             <div className="row g-0">
               <div className="col-md-4">
                 <img
                   src={
-                    (pet.photo =
-                      "aaa.jpg" || "bbb.jpg" || " "
-                        ? "https://offvkontakte.ru/wp-content/uploads/avatarka-pustaya-vk_20.jpg"
-                        : pet.photo)
+                    // (pet.photo =
+                    //   "aaa.jpg" || "bbb.jpg" || " "
+                    //     ? "https://offvkontakte.ru/wp-content/uploads/avatarka-pustaya-vk_20.jpg"
+                    //     :
+                          pet.photo
+                    // )
                   }
                   className="card-img-top p-2"
                   alt="pet"

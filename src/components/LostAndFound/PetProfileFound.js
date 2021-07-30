@@ -33,15 +33,17 @@ const PetProfileFound = ({ pet, setFoundPet }) => {
           </p>
         </div>{" "}
         <br />
-        <div className="card mb-3" style={{ maxWidth: "540px" }}>
+        <div className="card mb-3 border-0" style={{ maxWidth: "540px" }}>
           <div className="row g-0">
             <div className="col-md-4">
               <img
                 src={
-                  (pet.photo =
-                    "aaa.jpg" || "bbb.jpg" || " "
-                      ? "https://offvkontakte.ru/wp-content/uploads/avatarka-pustaya-vk_20.jpg"
-                      : pet.photo)
+                  // (pet.photo =
+                  //   "aaa.jpg" || "bbb.jpg"
+                  //     ? "https://offvkontakte.ru/wp-content/uploads/avatarka-pustaya-vk_20.jpg"
+                  //     :
+                        pet.photo
+                  // )
                 }
                 className="card-img-top p-2"
                 alt="pet"

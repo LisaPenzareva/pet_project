@@ -10,6 +10,7 @@ import WalkingPosts from "../Posts/WalkingPosts";
 import FosteringPosts from "../Posts/FosteringPosts";
 import VetHelpPosts from "../Posts/VetHelpPosts";
 import UserProfile from "../HomePage/UserProfile";
+import LostAndFoundForm from "../LostAndFound/LostAndFoundForm";
 
 const Pages = () => {
   return (
@@ -29,6 +30,12 @@ const Pages = () => {
       <Route exact={true} path="/homepage/vethelp">
         <VetHelpPosts homeMode={false} vetHelpMode={true} />
       </Route>
+        <Route exact={true} path="/lostandfound/form/:lostType">
+            <LostAndFoundForm />
+        </Route>
+        <Route exact={true} path="/lostandfound/form/:lostType">
+            <LostAndFoundForm />
+        </Route>
 
       <Route exact path="/homepage/userprofile">
         <UserProfile />

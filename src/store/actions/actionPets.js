@@ -1,4 +1,31 @@
-import {SET_LOST_PET_BY_ID, SET_FOUND_PET_BY_ID, FETCH_FOUND_PETS, FETCH_LOST_PETS} from '../typesList'
+import {SET_LOST_PET_BY_ID, SET_FOUND_PET_BY_ID, FETCH_FOUND_PETS, FETCH_LOST_PETS, ADD_NEW_PET} from '../typesList'
+
+export const addNewPet = (formData)=>{
+  return async (dispatch) => {
+    try {
+      const response = await fetch("http://propets.telran-edu.de:8080/api/v1/lostfounds", {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": localStorage.token
+        },
+        body: JSON.stringify(formData)
+      });
+      const json = await response.json();
+      await dispatch(addPet(json));
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
+}
+const addPet = (pet)=>{
+  return {
+    type: ADD_NEW_PET,
+    payload: pet,
+  };
+}
+
 
 export const getFoundPets = () => {
   return async (dispatch) => {
@@ -11,7 +38,7 @@ export const getFoundPets = () => {
         }
       });
       const json = await response.json();
-      dispatch(fetchFoundPets({foundList: json }));
+      dispatch(fetchFoundPets({list: json }));
     } catch (err) {
       console.log(err.message);
     }
@@ -36,7 +63,7 @@ export const getLostPets = () => {
         }
       });
       const json = await response.json();
-      dispatch(fetchLostPets({lostList: json }));
+      dispatch(fetchLostPets({list: json }));
     } catch (err) {
       console.log(err.message);
     }

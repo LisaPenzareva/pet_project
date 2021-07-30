@@ -20,7 +20,7 @@ const Lost = ({ pets }) => {
   };
 
   return (
-    <section>
+    <section className="container-fluid">
         <div className="lost-wrapper">
            <h3 className="lost-title"> Lost pets </h3>
       <hr />
@@ -34,16 +34,18 @@ const Lost = ({ pets }) => {
         </div>
       
 
-      <div className="container">
-        <div className="row">{renderPets()}</div>
-      </div>
+      <div className="container d-flex flex-row flex-wrap col-12">
+
+            <div>{renderPets()}</div>
+        </div>
+
     </section>
   );
 };
 
 const mapStateToProps = (state) => {
   return {
-    pets: state.pets.lostList,
+    pets: state.pets.list,
   };
 };
 

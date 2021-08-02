@@ -4,6 +4,7 @@ const InitialState = {
     activeUser: null,
     signUpMode: false,
     isAuth: localStorage.token ? true : false,
+    userById: null,
     editMode: false,
     homeMode: true,
     walkingMode: false,

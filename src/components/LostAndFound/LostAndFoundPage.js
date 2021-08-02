@@ -10,7 +10,7 @@ const LostAndFoundPage = (props) => {
   return (
     <div>
       <section className="container-fluid">
-        <div className="lost-found-pets col-7">
+        <div className="lost-found-pets">
           {isLostMode ? <Lost /> : <Found />}
         </div>
       </section>

@@ -32,7 +32,7 @@ const SignUp = ({addUser}) => {
         <div className='container'>
             <div className='d-flex flex-row flex-wrap justify-content-center '>
                 <div className='col mx-5 mt-5'>
-                    <form onSubmit={submitHandle}>
+                    <form method="POST" onSubmit={submitHandle}>
                         <div className="labeledInput">
                             <label className="labelClass " style={{fontWeight: '500'}}>Name:</label>{' '}
                             <input className="inputForm" placeholder='Helen Johnson' name='fullName' onChange={changeFieldHandle}/>
@@ -44,7 +44,7 @@ const SignUp = ({addUser}) => {
                         <div className="labeledInput">
                             <label className="labelClass " style={{fontWeight: '500'}}>Password:</label>{' '}
                             <input type="password" className="inputForm" placeholder='**********' name='password' onChange={changeFieldHandle}/>
-                            <text className="sideText">Password must have at least 8 characters with at least one Capital letter,at least one lower case letter and at least one number or special character.</text>
+                            <p className="sideText">Password must have at least 8 characters with at least one Capital letter,at least one lower case letter and at least one number or special character.</p>
                         </div>
                         <hr/>
                         <div className="d-flex flex-row flex-wrap justify-content-center">

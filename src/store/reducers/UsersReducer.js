@@ -1,4 +1,4 @@
-import {ADD_NEW_USER, CHANGE_AUTH} from "../typesList";
+import {ADD_NEW_USER, CHANGE_AUTH, SET_USER_BY_ID} from "../typesList";
 
 
 export const UsersReducer = (state = {}, action) => {
@@ -9,6 +9,11 @@ export const UsersReducer = (state = {}, action) => {
 
     case CHANGE_AUTH:
       return { ...state, isAuth: action.payload };
+
+    case SET_USER_BY_ID:
+      return {
+        ...state, userById: action.payload,
+      };
 
     default:
       return state;

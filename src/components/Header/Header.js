@@ -24,7 +24,7 @@ const Header = () => {
                     <div className="blue-logo blue-logo-header"></div>
                 </Link>
             </div>
-            <div className="col-6">
+            <div className="col-6 ">
                 {renderButtons()}
             </div>
 

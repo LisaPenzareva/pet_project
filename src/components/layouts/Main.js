@@ -11,6 +11,7 @@ const Main = () => {
   const isAuth = useSelector((state) => {
     return state.users.isAuth;
   });
+
   const location = useLocation();
   const renderHeader = () => {
     if (location.pathname === "/" && !isAuth) {

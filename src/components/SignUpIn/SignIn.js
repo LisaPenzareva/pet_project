@@ -29,7 +29,7 @@ const SignIn = ({ signin }) => {
             <div className="d-flex flex-row flex-wrap mb-5">
                 <div className="mt-5 signin-container mx-5">
                     <div className="hide"></div>
-                    <form onSubmit={submitHandle}>
+                    <form method="POST" onSubmit={submitHandle}>
                         <div className="labeledInput">
                             <label className="labelClass" style={{fontWeight: '500'}}>Email:</label>{' '}
                             <input type="text" className="inputForm" name='email' placeholder='helenjohnson@gmail.com' onChange={changeFieldHandle}/>

@@ -11,6 +11,7 @@ body {
 .mainPageHeader {
   width: 100%;
   height: 150px;
+  position: relative;
 }
 .logo {
   width: 60%;
@@ -27,12 +28,12 @@ body {
 }
 .signIn {
   margin-left: 500px;
-  position: relative;
 }
 .signInBtn {
   display: block !important;
   position: absolute !important;
-  top: -90px;
+  top: 20%;
+  right: 10%;
   background-color: #06b2bb;
   padding: 2px 5px;
   color: white;
@@ -336,7 +337,7 @@ input:focus {
 
 .sidebar-left,
 .sidebar-right {
-  height: 115vh;
+  height: 150vh;
   background-color: #06b2bbcc;
   padding-left: 0;
   text-align: center;
@@ -486,7 +487,7 @@ input:focus {
   border: 1px solid #FF2C2F;
   border-radius: 17px;
   color:black;
-width:190px;
+  width:190px;
 }
 .found-button{
   background-color: #06B2BB9A;

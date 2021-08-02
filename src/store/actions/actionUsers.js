@@ -1,4 +1,4 @@
-import {ADD_NEW_USER, CHANGE_AUTH} from "../typesList";
+import {ADD_NEW_USER, CHANGE_AUTH, SET_USER_BY_ID} from "../typesList";
 
 export const addNewUser = (data) => {
     return async (dispatch) => {
@@ -55,4 +55,32 @@ const changeAuth = (authMode) => {
         payload: authMode,
     }
 }
+
+
+export const setUserById = (userId) => {
+    return async(dispatch) => {
+        try {
+            const response = await fetch(`http://propets.telran-edu.de:8080/api/v1/users/${userId}`, {
+                method: "GET",
+                mode: "cors",
+                headers: {
+                    "Content-Type": "application/json",
+                    "x-api-key": localStorage.token
+                },
+            });
+            const json = await response.json();
+            console.log(json);
+            await dispatch(setUserByIdInState(json));
+        } catch (err) {
+            console.log(err.message);
+        }
+    };
+};
+
+const setUserByIdInState = (user) => {
+    return {
+        type: SET_USER_BY_ID,
+        payload: user,
+    };
+};
 

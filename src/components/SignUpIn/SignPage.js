@@ -9,7 +9,7 @@ const SignPage = () => {
 
 
     return (
-        <section className="blue-bg w-50 mx-auto">
+        <section className="blue-bg w-100 mx-auto">
             <div className='container-fluid bg-white white-container mb-5'>
                 <div className='col-6 d-flex blue-logo-container'>
                     <div className="blue-logo" ></div>

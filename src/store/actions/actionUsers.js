@@ -69,7 +69,7 @@ export const setUserById = (userId) => {
                 },
             });
             const json = await response.json();
-            console.log(json);
+            // console.log(json);
             await dispatch(setUserByIdInState(json));
         } catch (err) {
             console.log(err.message);

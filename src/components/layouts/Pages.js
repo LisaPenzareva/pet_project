@@ -30,14 +30,14 @@ const Pages = () => {
       <Route exact={true} path="/homepage/vethelp">
         <VetHelpPosts homeMode={false} vetHelpMode={true} />
       </Route>
-        <Route exact={true} path="/lostandfound/form/:lostType">
-            <LostAndFoundForm />
-        </Route>
-        <Route exact={true} path="/lostandfound/form/:lostType">
-            <LostAndFoundForm />
-        </Route>
+      <Route exact={true} path="/lostandfound/form/:lostType">
+        <LostAndFoundForm />
+      </Route>
+      <Route exact={true} path="/lostandfound/form/:lostType">
+        <LostAndFoundForm />
+      </Route>
 
-      <Route exact path="/homepage/userprofile">
+      <Route exact path="/homepage/:localStorage.userId">
         <UserProfile />
       </Route>
       <Route path="/signin">

@@ -13,7 +13,9 @@ const InitialState = {
   },
 
   posts: {
-    list: [],
+    list: [
+
+    ],
     addPostMode: false,
     walkingMode: false,
     fosteringMode: false,

@@ -42,7 +42,7 @@ const Found = ({ pets }) => {
 
       <div className="container-fluid">
         <div className="row d-flex justify-content-between">
-            <div className="col-4">{renderPets()}</div>
+            {renderPets()}
         </div>
       </div>
     </section>

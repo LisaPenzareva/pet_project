@@ -18,7 +18,7 @@ const PetCard = ({ pet }) => {
 
 
   return (
-    <div className="card border-0" style={{ width: "18rem" }}>
+    <div className="card border-0 col-lg-4 col-md-6 col-sm-12" style={{ width: "18rem" }}>
       <div className="card-body">
         <h5 className="petcard-title card-title">{pet.nick}</h5>
         <p className="petcard-text card-text">

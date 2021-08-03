@@ -337,8 +337,9 @@ input:focus {
 
 .sidebar-left,
 .sidebar-right {
-  height: 150vh;
+  min-height: 150vh;
   background-color: #06b2bbcc;
+  background-repeat: repeat-y;
   padding-left: 0;
   text-align: center;
 }
@@ -503,4 +504,45 @@ input:focus {
   border-radius: 50%;
   border: 2px solid white;
   margin: 0 auto;
+}
+
+.post-pic{
+  width:100%;
+  height:350px;
+  background-image: url("images/post-pic-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.post-avatar{
+  background-image: url("https://hornews.com/upload/images/akter.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  background-position: 50% 50%;
+}
+.post-avatar-1{
+  background-image: url("https://javasea.ru/uploads/posts/2016-08/1471977012_tom-kruz-tom-cruise.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  background-position: 50% 30%;
+}
+.post-avatar-2{
+  background-image: url("https://n1s1.hsmedia.ru/6b/51/d1/6b51d15827a378aa9805e5b580236be0/350x521_0xc0a8392b_104902051428426528.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  background-position: 50% 50%;
+}
+.fa-icon-like span{
+  color:#06B2BB9A;
+}
+.post-section{
+  padding: 80px 100px;
 }

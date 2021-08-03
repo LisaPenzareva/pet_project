@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { NavLink, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { setLocalLostPet } from "../../store/actions/actionPets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarker,
-  faPaw,
-  faSearch,
+
 } from "@fortawesome/free-solid-svg-icons";
-import Lost from "./Lost";
-import Found from "./Found";
+
 
 const PetProfileLost = ({ pet, setLostPet }) => {
   const { id } = useParams();

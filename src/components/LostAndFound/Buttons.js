@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaw, faSearch } from "@fortawesome/free-solid-svg-icons";
-import LostAndFoundForm from "./LostAndFoundForm";
+// import LostAndFoundForm from "./LostAndFoundForm";
 import {useHistory} from "react-router-dom";
 
 const Buttons = ()=>{

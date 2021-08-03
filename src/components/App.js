@@ -12,12 +12,12 @@ import React from "react";
 // import VetHelpPosts from "./Posts/VetHelpPosts";
 // import UserProfile from "./HomePage/UserProfile";
 import Main from "./layouts/Main";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const App = () => {
-  const isAuth = useSelector((state) => {
-    return state.users.isAuth;
-  });
+  // const isAuth = useSelector((state) => {
+  //   return state.users.isAuth;
+  // });
 
   return (
     <>

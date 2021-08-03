@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
-import { connect, useDispatch } from "react-redux";
-import { NavLink, useParams } from "react-router-dom";
+import { connect } from "react-redux";
+import { useParams } from "react-router-dom";
 import { setLocalFoundPet } from "../../store/actions/actionPets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarker,
-  faPaw,
-  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
 const PetProfileFound = ({ pet, setFoundPet }) => {

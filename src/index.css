@@ -495,5 +495,11 @@ input:focus {
   border-radius: 17px;
   color:white;
   width:190px;
+}
 
+.user-image {
+  width: 50%;
+  border-radius: 50%;
+  /*border-color: white;*/
+  /*border-width: 2px;*/
 }

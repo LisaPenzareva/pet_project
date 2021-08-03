@@ -11,25 +11,23 @@ const RightSide = ({user}) => {
     dispatch(setUserById(+localStorage.userId));
   }, []);
 
-  // useEffect(() => {
-  //   dispatch(setUserById(+localStorage.userId));
-  // }, [user]);
+  useEffect(() => {
+    dispatch(setUserById(+localStorage.userId));
+  }, [localStorage.userId]);
 
   console.log(user)
 
-  const renderUserFullname = () => {
+  const renderUserFullName = () => {
     return(
     <div>
       <p>{user.fullName}</p>
-    </div>
-)
-  }
+    </div> )}
 
   return <div className="sidebar-right col-2">
     <hr/>
     <div>
-      <img src="https://okeygeek.ru/wp-content/uploads/2020/03/no_avatar.png" className="rounded float-left" alt="avatar"/>
-      {/*{renderUserFullname()}*/}
+      <img src="https://okeygeek.ru/wp-content/uploads/2020/03/no_avatar.png" className="user-image" alt="avatar"/>
+      {/*{renderUserFullName()}*/}
     </div>
     <hr/>
   </div>;

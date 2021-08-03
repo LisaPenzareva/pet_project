@@ -44,8 +44,8 @@ const Lost = ({ pets }) => {
       {/*</div>*/}
 
         <div className="container">
-            <div className="row row-cols-3">
-                <div className="col-3">{renderPets()}</div>
+            <div className="row">
+                <div className="col-3-auto">{renderPets()}</div>
             </div>
         </div>
 

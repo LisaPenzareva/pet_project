@@ -353,7 +353,6 @@ input:focus {
   color: #06b2bbcc !important;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
-
 }
 
 /*.nav-element:focus {*/
@@ -361,7 +360,7 @@ input:focus {
 /*}*/
 
 .user-profile {
-  padding: 40px 100px;
+  padding: 5% 15%;
 }
 
 .user-text {
@@ -378,14 +377,15 @@ input:focus {
   font-weight: bold;
   padding: 10px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.user-photo {
-  border: 1px solid black;
+.user-image-1 {
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 13%;
+  height: 13%;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 .user-label {
@@ -393,16 +393,34 @@ input:focus {
   text-align: right;
   width: 70px;
   color: #393939;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .user-input {
   border: none;
   border-bottom: 1px solid #06b2bb9a;
-  width: 85%;
+  width: 80%;
+  margin: 8px;
+  font-size: 16px;
+}
+
+.cancelButton {
+  border-radius: 20px;
+  border: 1px solid #8dbfac;
+  background-color: white;
+  color: #06b2bb9a;
+  width: 100px;
+  height: 40px;
+  opacity: 1;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 20px;
+  font-size: 13px;
 }
 
 .user-button {
-  border-radius: 17px;
+  border-radius: 20px;
   background: #06b2bb9a 0% 0% no-repeat padding-box;
   border: 1px solid #8dbfac;
   width: 150px;
@@ -411,6 +429,8 @@ input:focus {
   color: white;
   cursor: pointer;
   margin-left: 5px;
+  margin-top: 20px;
+  font-size: 13px;
 }
 
 .user-name {
@@ -422,13 +442,11 @@ input:focus {
   margin: 0 20px 10px 0;
   padding: 0;
   float: left;
-
 }
 
 .blue {
-  color: #06B2BBCC;
+  color: #06b2bbcc;
 }
-
 
 .form-container {
   background-color: white;
@@ -439,32 +457,37 @@ input:focus {
 }
 .form-header {
   font-size: 19px;
-  color: #06B2BB;
+  color: #06b2bb;
 }
-.form-container select, input, textarea {
+.form-container select,
+input,
+textarea {
   margin-bottom: 5%;
 }
 
-
-.form-container input::placeholder, select, option, textarea::placeholder{
-  color:#BABABA;
+.form-container input::placeholder,
+select,
+option,
+textarea::placeholder {
+  color: #bababa;
   font: normal 11px Montserrat;
 }
 
-.form-container input, select{
+.form-container input,
+select {
   border: none;
   border-bottom: 1px solid #06b2bb9a;
 }
-.form-container textarea{
-  border: 2px solid #1CB1BA;
-  width:300px!important
+.form-container textarea {
+  border: 2px solid #1cb1ba;
+  width: 300px !important;
 }
 
 .form-container p {
-  color: #06B2BB9A;
+  color: #06b2bb9a;
   font: normal 9px Montserrat;
 }
-.form-friends{
+.form-friends {
   background-image: url("./images/height-measurement.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -473,29 +496,28 @@ input:focus {
   opacity: 1;
   margin-left: 25%;
 }
-.lost-form-submit{
+.lost-form-submit {
   width: 148px;
   height: 34px;
-  background: #06B2BB9A 0% 0% no-repeat padding-box;
-  border: 1px solid #13B1BA;
+  background: #06b2bb9a 0% 0% no-repeat padding-box;
+  border: 1px solid #13b1ba;
   border-radius: 17px;
   opacity: 1;
   color: white;
-
 }
-.lost-button{
-  background-color: #FA5456;
-  border: 1px solid #FF2C2F;
+.lost-button {
+  background-color: #fa5456;
+  border: 1px solid #ff2c2f;
   border-radius: 17px;
-  color:black;
-  width:190px;
+  color: black;
+  width: 190px;
 }
-.found-button{
-  background-color: #06B2BB9A;
-  border: 1px solid #13B1BA;
+.found-button {
+  background-color: #06b2bb9a;
+  border: 1px solid #13b1ba;
   border-radius: 17px;
-  color:white;
-  width:190px;
+  color: white;
+  width: 190px;
 }
 
 .user-image {
@@ -506,43 +528,43 @@ input:focus {
   margin: 0 auto;
 }
 
-.post-pic{
-  width:100%;
-  height:350px;
+.post-pic {
+  width: 100%;
+  height: 350px;
   background-image: url("images/post-pic-1.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-.post-avatar{
+.post-avatar {
   background-image: url("https://hornews.com/upload/images/akter.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  width:80px;
+  width: 80px;
   height: 80px;
   border-radius: 50%;
   background-position: 50% 50%;
 }
-.post-avatar-1{
+.post-avatar-1 {
   background-image: url("https://javasea.ru/uploads/posts/2016-08/1471977012_tom-kruz-tom-cruise.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width:80px;
+  width: 80px;
   height: 80px;
   border-radius: 50%;
   background-position: 50% 30%;
 }
-.post-avatar-2{
+.post-avatar-2 {
   background-image: url("https://n1s1.hsmedia.ru/6b/51/d1/6b51d15827a378aa9805e5b580236be0/350x521_0xc0a8392b_104902051428426528.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width:80px;
+  width: 80px;
   height: 80px;
   border-radius: 50%;
   background-position: 50% 50%;
 }
-.fa-icon-like span{
-  color:#06B2BB9A;
+.fa-icon-like span {
+  color: #06b2bb9a;
 }
-.post-section{
+.post-section {
   padding: 80px 100px;
 }

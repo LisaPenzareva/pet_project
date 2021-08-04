@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faThumbsUp} from "@fortawesome/free-solid-svg-icons";
 
 const NewsFeed = () => {
-  return <section className="post-section">
+  return (<section className="post-section">
     <div className="post-block  py-3">
       <div className="post-header d-flex justify-content-start flex-wrap mb-2">
         <div className="post-avatar"></div>
@@ -34,8 +34,7 @@ const NewsFeed = () => {
       </div>
 
         <div className="post-text">
-          <div className="post-pic
-"></div>
+          <div className="post-pic"></div>
           <h5>The quick, brown fox jumps over a lazy dog.</h5>
           <a href="#" style={{color:"#06B2BB9A"}}>...more</a>
         </div>
@@ -64,7 +63,7 @@ const NewsFeed = () => {
 
 
     </div>
-  </section>;
+  </section>)
 };
 
 export default NewsFeed;

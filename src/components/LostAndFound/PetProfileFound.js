@@ -53,7 +53,7 @@ const PetProfileFound = ({ pet, setFoundPet }) => {
                   <span className="blue">{pet.type}</span> - {pet.breed}
                 </h3>
                 <p className="card-text">
-                  <small className="text-muted">{pet.createdAt}</small>
+                  <small className="text-muted">{pet.createdAt.split("T")[0]}</small>
                 </p>
                 <hr />
                 <p>

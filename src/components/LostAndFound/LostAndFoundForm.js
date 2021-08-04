@@ -45,14 +45,12 @@ const LostAndFoundForm = ({ addPet }) => {
   };
 
   return (
-    <div className="container-fluid col-12 mt-3 form-container">
-      <div className="row mb-2 pt-3">
+    <div className="container-fluid col-12 mt-3 px-5 form-container">
+      <div className="row mb-4 pt-3">
         <div className="col-12 form-header">
           <strong>
             <span
-              className="text-capitalize
-"
-            >
+              className="text-capitalize">
               {lostType}
             </span>{" "}
             your buddy?
@@ -64,7 +62,7 @@ const LostAndFoundForm = ({ addPet }) => {
         <div className="col-lg-6">
           <div className="form-group row">
             <label htmlFor="nick" className="col-2 col-form-label">
-              Nickname: &nbsp;{" "}
+              Nickname: {" "}
             </label>
             <div className="col-10">
               <input
